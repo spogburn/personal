@@ -1,0 +1,335 @@
+body {
+  background: #eee;
+   /*padding-top: 50px;*/
+   color: #666;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+/*.background-container {
+   background-image: url("../images/lakepowell_20150414_lrg_opaque2.jpg");
+   background-size: cover;
+   height: 100vh;
+}*/
+
+a {
+  color: #1f674d;
+}
+
+a:hover {
+  color: #278563;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-brand {
+  color: #1f674d;
+}
+
+a.navbar-brand {
+  line-height: 25px;
+
+}
+
+.navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 1px 1px 1px #666;
+  font-size: 1.3em;
+
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #278563;
+
+}
+
+.navbar-brand:after {
+  content: '';
+	display: block;
+	margin: auto;
+  border-bottom: solid 1.5px #444;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.navbar-brand:hover:after{
+  transform: scaleX(1);
+}
+
+.navbar-default .navbar-nav>li>a.underline {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.navbar-default .navbar-nav>li>a.underline:after {
+  content: '';
+	display: block;
+	margin: auto;
+  border-bottom: solid 1.5px #444;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.navbar-default .navbar-nav>li>a.underline:hover:after {
+  transform: scaleX(1);
+}
+
+.projects {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+a.underline>span {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+a.underline>span:hover {
+  content: '';
+	display: block;
+	margin: auto;
+  border-bottom: solid 1.5px #444;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+a.underline>span:hover:after {
+  transform: scaleX(1);
+}
+
+.nav>li>a>img.nav-link {
+  max-width: 22px;
+  opacity: .5;
+}
+
+.nav>li>a>img.nav-link:hover {
+  opacity: .8;
+}
+/*h1.fromRight:after{ transform-origin:100% 50%; }
+h1.fromLeft:after{  transform-origin:  0% 50%; }
+}*/
+
+
+.banner {
+ margin-top: 30%;
+}
+
+#first-name {
+  margin-top: 10%;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  color: #444;
+  font-size: 4em;
+  text-shadow: 1px 1px 3px #444;
+}
+
+.typed-cursor{
+  display:none;
+}
+
+#last-name {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  color: #444;
+  margin-top: 8%;
+  font-size: 4em;
+  text-shadow: 1px 1px 3px #444;
+}
+
+
+.heading {
+  margin-top:5%;
+  margin-left: 8%;
+  font-size: 2.6em;
+  font-family: 'Raleway', sans-serif;
+  color: #1f674d;
+  text-shadow: 1px 1px 3px #444;
+
+}
+
+.lighter {
+  font-weight: 300;
+}
+
+
+h4.about {
+  color: #444;
+  max-width: 90%;
+  margin: 3% auto;
+  text-shadow: 1px 1px 1px #222;
+  text-align: center
+}
+
+h3.about {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  color: #444;
+  margin: 5% auto;
+  text-align: center;
+  text-shadow: 1px 1px 2px #222;
+}
+
+h3.section-link {
+  font-family: 'Raleway', sans-serif;
+  color: #444;
+  text-shadow: 1px 1px 2px #222;
+}
+
+#profile-pic{
+  max-width: 75%;
+}
+
+.about-text-full {
+    color: #1f674d;
+}
+
+h3#description {
+  margin-top: 1%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #444;
+  text-align: center;
+
+}
+
+hr {
+  border-top: 1px solid #1f674d;
+}
+
+ul {
+  padding-left: 2%;
+  text-align: left;
+  list-style: none;
+}
+
+.project {
+  margin-bottom: 2%
+}
+
+.app-descript {
+  margin-top: 5%;
+  font-size: 1.2em;
+}
+
+hr.short {
+  width: 80%;
+}
+
+
+.img-responsive {
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.img-about {
+  max-width: 200px;
+}
+
+.photo-about {
+  margin-top: 3%;
+}
+
+.about-column{
+  padding: 10px;
+}
+
+
+li {
+  font-size: 1.2em;
+}
+
+@media (max-width: 399px) {
+
+
+  h3#description.text-center {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  #first-name {
+    margin-top: 2%;
+    font-size: 3em;
+  }
+
+  #last-name {
+    font-size: 3em;
+  }
+  /*.about-text-full {
+    display: none;
+  }*/
+}
+
+@media (min-width: 400px) {
+  /*.about-text {
+    display: none;
+  }*/
+
+}
+
+@media (max-width:767px){
+  .profile-container {
+    display: none;
+  }
+
+  ul.nav.navbar-nav.leftnav{
+    margin-bottom:0;
+  }
+
+
+  ul.nav.navbar-nav.navbar-right{
+    margin-top:0;
+  }
+
+  li.nav-link-lg {
+    display: none;
+  }
+
+  #first-name {
+    margin-top: 5%;
+    font-size: 3em;
+  }
+
+  #last-name {
+    margin-top: 1%;
+    font-size: 3em;
+  }
+
+  h4.about {
+    font-size: 1em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  h3.about{
+    font-size: 1.1em;
+    margin-bottom: 5%;
+  }
+
+  h3#description.text-center {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+    li.nav-link-sm {
+      display:none;
+    }
+
+    ul.leftnav>li:first-child {
+      display: none;
+    }
+
+
+
+}
