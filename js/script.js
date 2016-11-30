@@ -61,6 +61,6 @@ $(document).ready(function(){
   $("hr").delay(2500).animate({"opacity": "1"}, 1800)
 
   $("p.about-text").delay(2500).animate({"opacity": "1"}, 1800)
-
-  $("#portfolio").delay(2500).animate({"opacity": "1"}, 1800)
+  //
+  // $("#portfolio").delay(2500).animate({"opacity": "1"}, 1800)
 });

@@ -11,8 +11,12 @@
 
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,700" rel="stylesheet">
 
-<link rel="stylesheet" href="css/normalize.css"/>
-<link rel="stylesheet" href="css/skeleton.css"/>
+<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+<!-- <link rel="stylesheet" href="css/normalize.css"/> -->
+<!-- <link rel="stylesheet" href="css/skeleton.css"/>  -->
+<link rel="stylesheet" href="css/simple-grid.min.css"/>
 <link href="css/lity.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css"/>
@@ -25,61 +29,6 @@
 
 
 </head>
-<!-- <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
-    <div class="container"> -->
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <!-- <div class="navbar-header">
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="./index.html" class="navbar-brand">Stephanie Ogburn</a>
-        </div> -->
-        <!-- Collection of nav links and other content for toggling -->
-        <!-- <div id="navbarCollapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav leftnav">
-                <li><a href="./index.html" class="underline home-small">Home</a></li>
-                <li><a href="./projects.html" class="underline">Projects</a></li>
-                <li><a href="./about.html" class="underline">About</a></li>
-            </ul>
-            <ul class="navbar-nav nav navbar-right">
-              <li class="nav-link-sm">
-                  <a href="https://github.com/spogburn" target="_blank" alt="Github"
-                      class="nav-link-sm underline">Github
-                  </a>
-              </li>
-              <li class="nav-link-lg">
-                  <a href="https://github.com/spogburn" target="_blank">
-                    <img src="../images/github-black.png" class="nav-link" alt="Github" >
-                  </a>
-              </li>
-                <li class="nav-link-sm">
-                    <a href="https://www.linkedin.com/in/stephaniepaigeogburn" target="_blank" alt="Linked In"
-                        class="nav-link-sm underline">LinkedIn
-                    </a>
-                </li>
-                <li class="nav-link-lg">
-                  <a href="https://www.linkedin.com/in/stephaniepaigeogburn">
-                    <img src="../images/linkedin-logo.png" class="nav-link" alt="Linked In" target="_blank">
-                  </a>
-                </li>
-              <li class="nav-link-lg">
-                  <a href="https://www.twitter.com/spogburn">
-                    <img src="../images/twitter.gif" class="nav-link" alt="Twitter" target="_blank">
-                  </a>
-              </li>
-              <li class="nav-link-sm">
-                  <a href="https://www.twitter.com/spogburn" target="_blank" alt="Twitter"
-                      class="nav-link-sm underline">Twitter
-                  </a>
-              </li>
-            </ul>
-        </div>
-    </div>
-</nav> -->
-
 
 <body class="container">
   <nav class="menu" id="nav-menu">
@@ -103,22 +52,22 @@
     </div>
   </nav>
   <div class="row" id="home">
-    <div class="three columns six columns-sm">
+    <div class="col l3 s6">
       <h6 class="name-logo">S<span class="heavy">O</span></h6>
     </div>
   </div>
   <div class="row name-text">
-    <div class="ten columns six columns-sm">
+    <div class="col l10 s6">
         <span id="name"></span>
     </div>
   </div>
-  <div class="row">
-    <div class="ten columns six columns-sm">
+  <div class="row" style="margin-bottom: 0;">
+    <div class="col l10 s6 ruler">
       <hr>
     </div>
   </div>
   <div class="row">
-    <div class="ten columns twelve columns-sm">
+    <div class="col l10 s12" style="margin-top: 0;">
       <p class="about-text">
         Javascript | HTML | CSS | AngularJS | Bootstrap | Agile | NodeJS | PostgreSQL
       </p>
@@ -130,22 +79,24 @@
 
 <section id="portfolio">
   <div class="row" >
-    <div class="two-thirds column twelve columns-sm dark-display">
+    <div class="col l7 m12 dark-display first-grid-row">
       <a href="https://spogburn.github.io/citywise-app/" target="_blank">
           <h5 class="text-center">CityWise Mobile App</h5>
       </a>
-      <a href="https://spogburn.github.io/citywise-app/" target="_blank"><img src="../images/app-main.png" alt="CityWise app home" class="img-responsive project-image"></a>
-      <a href="https://spogburn.github.io/citywise-app/" target="_blank"><img src="../images/app-map.png" alt="CityWise app map" class="img-responsive project-image"></a>
+      <a href="/images/app-main.png" target="_blank" class="darken" data-lity><img src="../images/app-main.png" alt="CityWise app home" class="img-responsive project-image"></a>
+      <a href="/images/app-map.png" target="_blank" class="darken" data-lity><img src="../images/app-map.png" alt="CityWise app map" class="img-responsive project-image"></a>
       <p>The CityWise mobile app lets citizens quickly and easily report problems they see around town using their mobile device.</p>
       <p>Ionic | Cordova | Google Oauth | AngularJS | NodeJS | PostgreSQL </p>
       <a href="https://github.com/spogburn/citywise-app"><small>View on Github</small></a>
     </div>
-    <div class="one-third column twelve columns-sm light-display">
+    <div class="col l4 m12 light-display">
       <a href="http://city-wise.surge.sh/#/" target="_blank">
           <h5 class="text-center">CityWise Dashboard</h5>
       </a>
-      <a href="http://city-wise.surge.sh/#/" target="_blank"><img src="../images/citywise-main.png" alt="CityWise logo" class="img-responsive project-image"></a>
-      <a href="http://city-wise.surge.sh/#/" target="_blank"><img src="../images/citywise-analytics.png" alt="CityWise logo" class="img-responsive project-image"></a>
+      <div>
+        <a href="/images/citywise-main.png" target="_blank" class="darken" data-lity><img src="../images/citywise-main.png" alt="CityWise main" class="img-responsive project-image"></a></div>
+      <a href="/images/citywise-analytics.png" target="_blank" class="darken" data-lity><img src="../images/citywise-analytics.png" alt="CityWise dashboard" class="img-responsive project-image"></a>
+      <a href="/images/citywise-modal.png" target="_blank" class="darken" data-lity><img src="../images/citywise-modal.png" alt="CityWise analytics" class="img-responsive project-image"></a>
       <p>Cities log in to their dashboard to instantly see reports from the CityWise app.</p>
       <p>AngularJS | Bootstrap3 | GoogleMaps API | NodeJS | PostgreSQL </p>
       <a href="https://github.com/spogburn/citywise-cities-client"><small>View on Github</small></a>
@@ -153,25 +104,27 @@
 
   </div>
   <div class="row">
-    <div class="one-third column twelve columns-sm light-display">
+    <div class="col l4 m12 light-display">
       <a href="https://silverfoxxx-f12df.firebaseapp.com/" target="_blank">
           <h5 class="text-center">Silver Fox</h5>
       </a>
-      <a href="https://silverfoxxx-f12df.firebaseapp.com/" target="_blank"><img src="../images/silverfox.png" alt="Silver Fox logo" class="img-responsive project-image"></a>
+      <a href="./images/silverfox-main.png" target="_blank" class="darken" data-lity><img src="./images/silverfox-main.png" alt="Silver Fox logo" class="img-responsive project-image"></a>
+      <a href="./images/silverfox-matches.png" target="_blank" class="darken" data-lity><img src="./images/silverfox-matches.png" alt="Silver Fox matches" class="img-responsive project-image"></a>
+      <a href="./images/silverfox-profile.png" target="_blank" class="darken" data-lity><img src="./images/silverfox-profile.png" alt="Silver Fox profile" class="img-responsive project-image"></a>
       <p>SilverFox is a dating app for older adults. It is designed for an easy and intuitive user experience. Our algorithm matches members by location and interest.</p>
-      <h5>Try it:</h5>
+      <a href="https://silverfoxxx-f12df.firebaseapp.com/" target="_blank" class="href"><h5>PROJECT PAGE</h5></a>
       <p><strong>Login: </strong>colleen@colleen.com</p>
       <p><strong>Password:</strong> 1234</p>
       <p>React | NodeJS | Express | PostgreSQL </p>
       <a href="https://github.com/242-Linden/client"><small>View on Github</small></a>
     </div>
-    <div class="two-thirds column twelve columns-sm dark-display">
+    <div class="col l7 m12 dark-display">
       <a href="http://habit-at.herokuapp.com/" target="_blank">
           <h5 class="text-center">Habit@</h5>
       </a>
-      <a href="http://habit-at.herokuapp.com/" target="_blank"><img src="../images/habitat-16-9.jpg" alt="Habitat" class="img-responsive project-image"></a>
+      <a href="http://habit-at.herokuapp.com/" target="_blank" class="darken" data-lity><img src="./images/habitat-16-9.jpg" alt="Habitat" class="img-responsive project-image"></a>
       <p>Habit@ allows households keep track of chores and tasks, set deadlines and send text reminders of those tasks.</p>
-      <h5>Try it:</h5>
+      <a href="http://habit-at.herokuapp.com/" target="_blank" class="href"><h5>PROJECT PAGE</h5></a>
       <p><strong>Login: </strong>homer@thesimpsons.com</p>
       <p><strong>Password:</strong> 1234</p>
       <p>Bootstrap3 | Twilio API | NodeJS | Express | PostgreSQL </p>
@@ -263,7 +216,9 @@
     <!-- jquery CDN -->
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-
+    <!-- materialize js -->
+    <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
       <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
