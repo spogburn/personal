@@ -58,9 +58,9 @@ $(document).ready(function(){
 
   $(".name-logo").delay(300).animate({"opacity": "1"}, 1800);
 
-  $("hr").delay(2500).animate({"opacity": "1"}, 1800)
+  $("hr").delay(3000).animate({"opacity": "1"}, 1800)
 
-  $("p.about-text").delay(2500).animate({"opacity": "1"}, 1800)
+  $("p.about-text").delay(3000).animate({"opacity": "1"}, 1800)
   //
   // $("#portfolio").delay(2500).animate({"opacity": "1"}, 1800)
 });

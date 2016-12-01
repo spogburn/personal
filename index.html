@@ -30,13 +30,13 @@
 
 </head>
 
-<body class="container">
+<body>
   <nav class="menu" id="nav-menu">
     <div class="menu-wrap">
-      <i class="fa fa-times-circle fa-lg menu-close" aria-hidden="true"></i>
-      <a href="#home" class="smoothScroll">Top</a>
-  		<a href="#portfolio" class="smoothScroll">Portfolio</a>
-      <a href="#about" class="smoothScroll">About</a>
+      <i class="fa fa-times fa-lg fa-2x menu-close" aria-hidden="true"></i>
+      <a href="#home" class="nav-link">Top</a>
+  		<a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#about" class="nav-link">About</a>
       <a href="https://www.linkedin.com/in/stephaniepaigeogburn">
         <img src="../images/linkedin-logo.png" class="nav-link" alt="Linked In" target="_blank">
       </a>
@@ -48,14 +48,15 @@
       </a>
     </div>
     <div id="menu-icon">
-      <i class="fa fa-bars fa-lg"  aria-hidden="true"></i>
+      <i class="fa fa-bars fa-lg fa-2x"  aria-hidden="true"></i>
     </div>
   </nav>
   <div class="row" id="home">
-    <div class="col l3 s6">
-      <h6 class="name-logo">S<span class="heavy">O</span></h6>
-    </div>
-  </div>
+     <div class="col l3 s6">
+       <h6 class="name-logo">S<span class="heavy">O</span></h6>
+     </div>
+   </div>
+
   <div class="row name-text">
     <div class="col l10 s6">
         <span id="name"></span>
@@ -77,58 +78,63 @@
     </div>
   </div>
 
-<section id="portfolio">
+<section id="portfolio" class="container">
   <div class="row" >
-    <div class="col l7 m12 dark-display first-grid-row">
+    <div class="col l7 m12 dark-display first-grid-row center-align">
       <a href="https://spogburn.github.io/citywise-app/" target="_blank">
-          <h5 class="text-center">CityWise Mobile App</h5>
+          <h4 class="text-center">CityWise Mobile App</h4>
       </a>
       <a href="/images/app-main.png" target="_blank" class="darken" data-lity><img src="../images/app-main.png" alt="CityWise app home" class="img-responsive project-image"></a>
       <a href="/images/app-map.png" target="_blank" class="darken" data-lity><img src="../images/app-map.png" alt="CityWise app map" class="img-responsive project-image"></a>
       <p>The CityWise mobile app lets citizens quickly and easily report problems they see around town using their mobile device.</p>
-      <p>Ionic | Cordova | Google Oauth | AngularJS | NodeJS | PostgreSQL </p>
-      <a href="https://github.com/spogburn/citywise-app"><small>View on Github</small></a>
+      <a href="https://play.google.com/store/apps/details?id=com.ionicframework.citywise435211" target="_blank" class="waves-effect grey darken-1 white-text btn">Get App</a>
+      <p>Ionic | Cordova | Google Oauth | AngularJS | NodeJS | Express | PostgreSQL </p>
+      <a href="https://github.com/spogburn/citywise-app" target="_blank" class="github-link"><small>Github frontend</small></a>
+      <a href="https://github.com/spogburn/citywise-server" target="_blank" class="github-link"><small>Github backend</small></a>
     </div>
-    <div class="col l4 m12 light-display">
+    <div class="col l4 m12 light-display center-align">
       <a href="http://city-wise.surge.sh/#/" target="_blank">
-          <h5 class="text-center">CityWise Dashboard</h5>
+          <h4 class="text-center">CityWise Dashboard</h4>
       </a>
-      <div>
-        <a href="/images/citywise-main.png" target="_blank" class="darken" data-lity><img src="../images/citywise-main.png" alt="CityWise main" class="img-responsive project-image"></a></div>
+
+        <!-- <a href="/images/citywise-main.png" target="_blank" class="darken" data-lity><img src="../images/citywise-main.png" alt="CityWise main" class="img-responsive project-image"></a> -->
+
       <a href="/images/citywise-analytics.png" target="_blank" class="darken" data-lity><img src="../images/citywise-analytics.png" alt="CityWise dashboard" class="img-responsive project-image"></a>
       <a href="/images/citywise-modal.png" target="_blank" class="darken" data-lity><img src="../images/citywise-modal.png" alt="CityWise analytics" class="img-responsive project-image"></a>
       <p>Cities log in to their dashboard to instantly see reports from the CityWise app.</p>
-      <p>AngularJS | Bootstrap3 | GoogleMaps API | NodeJS | PostgreSQL </p>
-      <a href="https://github.com/spogburn/citywise-cities-client"><small>View on Github</small></a>
+      <a href="http://city-wise.surge.sh/#/" target="_blank" class="waves-effect grey darken-1 white-text btn">View Site</a>
+      <p>AngularJS | Bootstrap3 | GoogleMaps API </p>
+      <a href="https://github.com/spogburn/citywise-cities-client" target="_blank" class="github-link"><small>Github frontend</small></a>
     </div>
 
   </div>
   <div class="row">
-    <div class="col l4 m12 light-display">
+    <div class="col l4 m12 light-display center-align">
       <a href="https://silverfoxxx-f12df.firebaseapp.com/" target="_blank">
-          <h5 class="text-center">Silver Fox</h5>
+          <h4 class="text-center">Silver Fox</h4>
       </a>
-      <a href="./images/silverfox-main.png" target="_blank" class="darken" data-lity><img src="./images/silverfox-main.png" alt="Silver Fox logo" class="img-responsive project-image"></a>
+      <!-- <a href="./images/silverfox-main.png" target="_blank" class="darken" data-lity><img src="./images/silverfox-main.png" alt="Silver Fox logo" class="img-responsive project-image"></a> -->
       <a href="./images/silverfox-matches.png" target="_blank" class="darken" data-lity><img src="./images/silverfox-matches.png" alt="Silver Fox matches" class="img-responsive project-image"></a>
       <a href="./images/silverfox-profile.png" target="_blank" class="darken" data-lity><img src="./images/silverfox-profile.png" alt="Silver Fox profile" class="img-responsive project-image"></a>
       <p>SilverFox is a dating app for older adults. It is designed for an easy and intuitive user experience. Our algorithm matches members by location and interest.</p>
-      <a href="https://silverfoxxx-f12df.firebaseapp.com/" target="_blank" class="href"><h5>PROJECT PAGE</h5></a>
+      <a href="https://silverfoxxx-f12df.firebaseapp.com/" target="_blank" class="waves-effect grey darken-1 white-text btn">View Site</a>
       <p><strong>Login: </strong>colleen@colleen.com</p>
       <p><strong>Password:</strong> 1234</p>
       <p>React | NodeJS | Express | PostgreSQL </p>
-      <a href="https://github.com/242-Linden/client"><small>View on Github</small></a>
+      <a href="https://github.com/242-Linden/client" target="_blank" class="github-link"><small>Github frontend</small></a>
+      <a href="https://github.com/242-Linden/server" target="_blank" class="github-link"><small>Github backend</small></a>
     </div>
-    <div class="col l7 m12 dark-display">
+    <div class="col l7 m12 dark-display center-align">
       <a href="http://habit-at.herokuapp.com/" target="_blank">
-          <h5 class="text-center">Habit@</h5>
+          <h4 class="text-center">Habit@</h4>
       </a>
-      <a href="http://habit-at.herokuapp.com/" target="_blank" class="darken" data-lity><img src="./images/habitat-16-9.jpg" alt="Habitat" class="img-responsive project-image"></a>
+      <a href="./images/habitat-16-9.jpg" target="_blank" class="darken" data-lity><img src="./images/habitat-16-9.jpg" alt="Habitat" class="img-responsive project-image"></a>
       <p>Habit@ allows households keep track of chores and tasks, set deadlines and send text reminders of those tasks.</p>
-      <a href="http://habit-at.herokuapp.com/" target="_blank" class="href"><h5>PROJECT PAGE</h5></a>
+      <a href="http://habit-at.herokuapp.com/" target="_blank" class="waves-effect grey darken-1 white-text btn">View Site</a>
       <p><strong>Login: </strong>homer@thesimpsons.com</p>
       <p><strong>Password:</strong> 1234</p>
       <p>Bootstrap3 | Twilio API | NodeJS | Express | PostgreSQL </p>
-      <a href="https://github.com/oddball-designs/habit.at"><small>View on Github</small></a>
+      <a href="https://github.com/oddball-designs/habit.at" target="_blank" class="github-link"><small>View on Github</small></a>
     </div>
   </div>
 

@@ -5,8 +5,7 @@ body {
 }
 
 .container {
-  width: 85%;
-  max-width: 90%;
+  width: 100%;
   margin-left: 3%;
   margin-right: 3%;
 }
@@ -35,9 +34,30 @@ p {
   min-height: 680px;
 }
 
+h6.name-logo {
+  margin: 0;
+}
+
+/*.header {
+  background-color: #fff;
+
+  position: fixed;
+  top: 0px;
+  z-index: 8;
+  height: 70px;
+  width: 100vw;
+  margin-left: -2.75rem;
+  margin-right: -.75rem;
+  box-shadow: 4px 2px 5px rgba(57, 57, 57, 0.9);
+}*/
+
+
+
 .name-logo {
   color: #888;
-  position: absolute;
+  position: relative;
+  width: 32px;
+  height: 32px;
   border: 1px solid #444;
   margin-top: 2%;
   padding: 5px;
@@ -49,9 +69,13 @@ p {
 /*CSS for sliding menu*/
 
 nav {
-  background-color: #fff;
-  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
   box-shadow: none;
+}
+
+.nav-link {
+  color: #444;
 }
 
 .menu {
@@ -71,7 +95,7 @@ nav {
 
 #menu-icon{
   position: absolute;
-	margin-top: 20px;
+	margin-top: 15px;
 	left: 0;
 	z-index: 11;
 	display: block;
@@ -82,7 +106,6 @@ nav {
 	height: 40px;
 	line-height: 40px;
 	cursor: pointer;
-	background: rgba(0,0,0,0.25);
 	-webkit-transition: all .4s ease-in-out;
 	   -moz-transition: all .4s ease-in-out;
 		-ms-transition: all .4s ease-in-out;
@@ -90,14 +113,14 @@ nav {
 			transition: all .4s ease-in-out;
 }
 
-#menu-icon:hover {
-  color: #ffffff;
-	background: rgba(0,0,0,0.2);
-	-webkit-transition: all .4s ease-in-out;
-	   -moz-transition: all .4s ease-in-out;
-		-ms-transition: all .4s ease-in-out;
-		 -o-transition: all .4s ease-in-out;
-			transition: all .4s ease-in-out;
+#menu-icon i:hover {
+  color: #7c7c7c;
+	/*background: rgba(0,0,0,0.2);*/
+	-webkit-transition: all .2s ease-in-out;
+	   -moz-transition: all .2s ease-in-out;
+		-ms-transition: all .2s ease-in-out;
+		 -o-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
 
 }
 
@@ -124,7 +147,7 @@ nav {
 
 .menu a {
 	margin-left: 20px;
-	color: #808080;
+	color: #444;
 	display: block;
 	font-size: 1.1em;
 	font-weight: 400;
@@ -135,7 +158,7 @@ nav {
 }
 
 .menu a:hover {
-	color: #000;
+	color: #6c6c6c;
 }
 
 .menu a > img {
@@ -166,6 +189,18 @@ nav {
     transition: all .4s ease-in-out;
 }
 
+.fa-times {
+  color: #444;
+}
+
+#home {
+  position: relative;
+  top: 10px;
+	right: 0;
+	/*z-index: 11;*/
+	display: block;
+
+}
 #portfolio {
   margin-top: 5%;
   opacity: 1;
@@ -178,6 +213,11 @@ a {
 a:hover {
   color: #278563;
   text-decoration: none;
+}
+
+.github-link {
+  display: block;
+  margin-bottom: 3%;
 }
 
 
@@ -229,7 +269,7 @@ h1.fromLeft:after{  transform-origin:  0% 50%; }
 
 .name-text {
   position: relative;
-  margin-top: 12%;
+  margin-top: 6%;
   margin-bottom: 0;
 }
 
@@ -308,14 +348,16 @@ h3.section-link {
 }
 
 h4#description {
-  margin-top: 1%;
+  margin-top: 2%
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: #444;
   margin-bottom: 0;
-
 }
 
+h4 {
+  margin-top: 0;
+}
 
 hr {
   border-top: 1px solid #444;
@@ -387,21 +429,6 @@ li {
 }
 
 
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  #menu-icon {
-    height: 40px;
-    width: 40px;
-    margin-top: 20px;
-  }
-
-  .name-logo {
-    margin-top: 15px;
-  }
-
-
-}
-
 @media (max-width:760px){
 
   .profile-container {
@@ -421,8 +448,13 @@ li {
     display: none;
   }
 
+  #home {
+    position: relative;
+
+  }
+
   .name-logo {
-    margin-top: 15px;
+    /*margin-top: 15px;*/
   }
 
   #first-name {
@@ -440,7 +472,7 @@ li {
   }
 
   h3.description {
-    margin-top: 1%;
+    margin-top: 3%;
   }
 
 
@@ -466,28 +498,57 @@ li {
 
 @media (min-width: 768px) {
 
-    li.nav-link-sm {
-      display:none;
-    }
+  .container {
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
 
-    ul.leftnav>li:first-child {
-      display: none;
-    }
+  h3#description {
+    margin-top: 3%;
+    font-size: 1.3em;
+    display: inline-block;
+  }
 
+  li.nav-link-sm {
+    display:none;
+  }
 
+  ul.leftnav>li:first-child {
+    display: none;
+  }
 
+}
+
+@media (max-width: 840px) {
+ h1#last-name {
+     margin-bottom: 1rem;
+   }
 }
 
 @media (max-width: 399px) {
 
+  body {
+    max-width: 100vw;
+  }
 
+  .container {
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .name-text {
+    margin-top: 10%;
+  }
   #menu-icon {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
-  .name-logo {
-    margin-top: 30px;
+  #home {
+    top: 15px;
   }
+
   h3#description {
     margin-top: 3%;
     font-size: 1.3em;
@@ -512,8 +573,5 @@ li {
     display: block;
   }
 
-  h3.description {
-    margin-top: 1%;
-  }
 
 }
