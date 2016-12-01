@@ -3,26 +3,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 
-  <title>Stephanie Ogburn | Web Developer</title>
-  <!-- Latest compiled and minified CSS -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
-
-
+<title>Stephanie Ogburn | Web Developer</title>
 
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,700" rel="stylesheet">
 
-<!-- Compiled and minified CSS -->
+<!-- minified CSS for Materialize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
-<!-- <link rel="stylesheet" href="css/normalize.css"/> -->
-<!-- <link rel="stylesheet" href="css/skeleton.css"/>  -->
 <link rel="stylesheet" href="css/simple-grid.min.css"/>
+
+<!--lity for modals  -->
 <link href="css/lity.min.css" rel="stylesheet">
+
+<!-- styles -->
 
 <link rel="stylesheet" href="css/style.css"/>
 
 <script src="https://use.fontawesome.com/28c9c3a5a2.js" type="text/javascript"></script>
 
+<!-- favicon  -->
 
 <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="./favicon.ico" />
 <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="http://stephanieogburn.com/favicon.ico" />
@@ -70,7 +69,7 @@
   <div class="row">
     <div class="col l10 s12" style="margin-top: 0;">
       <p class="about-text">
-        Javascript | HTML | CSS | AngularJS | Bootstrap | Agile | NodeJS | PostgreSQL
+        Javascript | HTML | CSS | AngularJS | Bootstrap | NodeJS | PostgreSQL | Heroku | Agile | Github
       </p>
       <p class="about-text">
         <a href="mailto:stephanie.ogburn@gmail.com" class="email">stephanie.ogburn@gmail.com</a>
@@ -79,26 +78,20 @@
   </div>
 
 <section id="portfolio" class="container">
-  <div class="row" >
-    <div class="col l7 m12 dark-display first-grid-row center-align">
-      <a href="https://spogburn.github.io/citywise-app/" target="_blank">
-          <h4 class="text-center">CityWise Mobile App</h4>
-      </a>
+  <div class="row">
+    <div class="col l7 m12 dark-display first-grid-row center-align hoverable"  data-mh="first-row">
+          <h3 class="text-center"><span>CityWise Mobile App</span></h3>
+
       <a href="/images/app-main.png" target="_blank" class="darken" data-lity><img src="../images/app-main.png" alt="CityWise app home" class="img-responsive project-image"></a>
       <a href="/images/app-map.png" target="_blank" class="darken" data-lity><img src="../images/app-map.png" alt="CityWise app map" class="img-responsive project-image"></a>
       <p>The CityWise mobile app lets citizens quickly and easily report problems they see around town using their mobile device.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.ionicframework.citywise435211" target="_blank" class="waves-effect grey darken-1 white-text btn">Get App</a>
+      <a href="https://play.google.com/store/apps/details?id=com.ionicframework.citywise435211" target="_blank" class="grey darken-1 white-text btn">View App</a>
       <p>Ionic | Cordova | Google Oauth | AngularJS | NodeJS | Express | PostgreSQL </p>
       <a href="https://github.com/spogburn/citywise-app" target="_blank" class="github-link"><small>Github frontend</small></a>
       <a href="https://github.com/spogburn/citywise-server" target="_blank" class="github-link"><small>Github backend</small></a>
     </div>
-    <div class="col l4 m12 light-display center-align">
-      <a href="http://city-wise.surge.sh/#/" target="_blank">
-          <h4 class="text-center">CityWise Dashboard</h4>
-      </a>
-
-        <!-- <a href="/images/citywise-main.png" target="_blank" class="darken" data-lity><img src="../images/citywise-main.png" alt="CityWise main" class="img-responsive project-image"></a> -->
-
+    <div class="col l4 m12 light-display center-align hoverable" data-mh="first-row">
+          <h3 class="text-center"><span>CityWise Dashboard</span></h3>
       <a href="/images/citywise-analytics.png" target="_blank" class="darken" data-lity><img src="../images/citywise-analytics.png" alt="CityWise dashboard" class="img-responsive project-image"></a>
       <a href="/images/citywise-modal.png" target="_blank" class="darken" data-lity><img src="../images/citywise-modal.png" alt="CityWise analytics" class="img-responsive project-image"></a>
       <p>Cities log in to their dashboard to instantly see reports from the CityWise app.</p>
@@ -109,31 +102,28 @@
 
   </div>
   <div class="row">
-    <div class="col l4 m12 light-display center-align">
-      <a href="https://silverfoxxx-f12df.firebaseapp.com/" target="_blank">
-          <h4 class="text-center">Silver Fox</h4>
-      </a>
-      <!-- <a href="./images/silverfox-main.png" target="_blank" class="darken" data-lity><img src="./images/silverfox-main.png" alt="Silver Fox logo" class="img-responsive project-image"></a> -->
+    <div class="col l4 m12 light-display center-align hoverable" data-mh="second-row">
+          <h3 class="text-center"><span>Silver Fox</span></h3>
       <a href="./images/silverfox-matches.png" target="_blank" class="darken" data-lity><img src="./images/silverfox-matches.png" alt="Silver Fox matches" class="img-responsive project-image"></a>
       <a href="./images/silverfox-profile.png" target="_blank" class="darken" data-lity><img src="./images/silverfox-profile.png" alt="Silver Fox profile" class="img-responsive project-image"></a>
-      <p>SilverFox is a dating app for older adults. It is designed for an easy and intuitive user experience. Our algorithm matches members by location and interest.</p>
+      <p>SilverFox is a dating app for older adults. It is designed for an easy and intuitive user experience.</p>
       <a href="https://silverfoxxx-f12df.firebaseapp.com/" target="_blank" class="waves-effect grey darken-1 white-text btn">View Site</a>
       <p><strong>Login: </strong>colleen@colleen.com</p>
       <p><strong>Password:</strong> 1234</p>
-      <p>React | NodeJS | Express | PostgreSQL </p>
-      <a href="https://github.com/242-Linden/client" target="_blank" class="github-link"><small>Github frontend</small></a>
-      <a href="https://github.com/242-Linden/server" target="_blank" class="github-link"><small>Github backend</small></a>
+      <p>React | NodeJS | Express | PostgreSQL | Heroku </p>
+      <a href="https://github.com/242-Linden/client" target="_blank" class="github-link underline"><small>Github frontend</small></a>
+      <a href="https://github.com/242-Linden/server" target="_blank" class="github-link underline"><small>Github backend</small></a>
     </div>
-    <div class="col l7 m12 dark-display center-align">
-      <a href="http://habit-at.herokuapp.com/" target="_blank">
-          <h4 class="text-center">Habit@</h4>
-      </a>
-      <a href="./images/habitat-16-9.jpg" target="_blank" class="darken" data-lity><img src="./images/habitat-16-9.jpg" alt="Habitat" class="img-responsive project-image"></a>
+    <div class="col l7 m12 dark-display center-align hoverable" data-mh="second-row">
+          <h3 class="text-center"><span>Habit@</span></h3>
+
+      <a href="./images/habitat-home.png" target="_blank" class="darken" data-lity><img src="./images/habitat-home.png" alt="Habitat home" class="img-responsive project-image"></a>
+      <a href="./images/habitat-tasks.png" target="_blank" class="darken" data-lity><img src="./images/habitat-tasks.png" alt="Habitat tasks" class="img-responsive project-image"></a>
       <p>Habit@ allows households keep track of chores and tasks, set deadlines and send text reminders of those tasks.</p>
       <a href="http://habit-at.herokuapp.com/" target="_blank" class="waves-effect grey darken-1 white-text btn">View Site</a>
       <p><strong>Login: </strong>homer@thesimpsons.com</p>
       <p><strong>Password:</strong> 1234</p>
-      <p>Bootstrap3 | Twilio API | NodeJS | Express | PostgreSQL </p>
+      <p> NodeJS | Express | PostgreSQL | Bootstrap | Twilio API | Heroku</p>
       <a href="https://github.com/oddball-designs/habit.at" target="_blank" class="github-link"><small>View on Github</small></a>
     </div>
   </div>
@@ -142,102 +132,25 @@
 </section>
 
 
-      <!-- <div class="row">
-        <div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 text-center">
-          <div class="row">
-            <div class="col-md-4 col-sm-12 col-xs-12 text-center">
-              <a href="#" class="underline" id="go-down"><h3 class="section-link">PROJECTS</h3></a>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12 text-center">
-              <h3 class="section-link">SKILLS</h3>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12 text-center">
-              <h3 class="section-link">ABOUT</h3>
-            </div>
-          </div>
-
-        </div>
-      </div> -->
-
-
-    <!-- <div class="row" id="projects">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="row projects">
-          <div class="col-md-8 col-sm-12 col-xs-12" style="background-color: #ccc; height: 400px;">
-            <a href="http://city-wise.surge.sh/#/" target="_blank">
-                <h3 class="text-center">CityWise</h3>
-            </a>
-            <h4 class="text-center">// citizen reporting of city infrastructure problems </h4>
-            <a href="http://city-wise.surge.sh/#/" target="_blank"><img src="../images/citywise-16-9.jpg" alt="CityWise logo" class="img-responsive project-image"></a>
-
-          </div>
-          <div class="col-md-4 col-sm-12 col-xs-12" style="background-color: red; height: 200px;">
-
-          </div>
-          <div class="col-md-4 col-sm-12 col-xs-12" style="background-color: green; height: 200px;">
-
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div class="row" style="margin-bottom: 5%;">
-      <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-      <h3 class="text-center" id="description">I am a full stack Javascript developer available for front end or server-side work.
-      </h3>
-      </div>
-    </div> -->
-    <!-- <div class="row">
-      <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-        <h4>Languages</h4>
-        <ul class="text-center">
-          <li>Javascript</li>
-          <li>PostgreSQL</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-        </ul>
-      </div>
-      <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-        <h4>Frameworks</h4>
-        <ul class="text-center">
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>Rails 4</li>
-          <li>Ionic</li>
-          <li>AngularJS</li>
-          <li>Bootstrap 3</li>
-        </ul>
-      </div>
-      <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-        <h4>Extras</h4>
-        <ul class="text-center">
-          <li>Test Driven Development</li>
-          <li>Object Oriented Programming</li>
-          <li>Agile/Scrum</li>
-          <li>Pivotal Tracker</li>
-        </ul>
-      </div> -->
 
 
 
     <!-- jquery CDN -->
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
+
     <!-- materialize js -->
     <!-- Compiled and minified JavaScript -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
-      <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
-    <!-- velocity CDN -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script> -->
+  <!-- match height js -->
+  <script src="js/matchHeight.js" type="text/javascript"></script>
 
     <!-- lity for light box -->
     <script src="js/lity.min.js" type="text/javascript"></script>
 
-
     <!-- typedjs CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js" type="text/javascript"></script>
-
 
     <script src="js/script.js" type="text/javascript"></script>
 
